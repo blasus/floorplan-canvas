@@ -1,0 +1,12 @@
+{
+  "srcFiles": ["./src/assets/images/**/*.svg"],
+  "outputDirectory": "./src/icons",
+  "interfaceName": "Icon",
+  "typeName": "icon",
+  "prefix": "icon",
+  "fileName": "icon.model",
+  "svgoConfig": {
+    "plugins": ["cleanupAttrs"]
+  },
+  "compileSources": false
+}

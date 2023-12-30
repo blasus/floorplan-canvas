@@ -1,0 +1,8 @@
+.*
+**/tsconfig.json
+webpack.*.js
+node_modules
+package-lock.json
+svgconfig.json
+src
+demo

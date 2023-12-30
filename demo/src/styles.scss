@@ -1,0 +1,118 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+$black: #000000;
+$white: #ffffff;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1rem 1rem 4rem;
+}
+
+.description {
+  font-size: 0.9em;
+  font-family: "Segoe UI";
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  > * {
+    width: 33%;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 5px;
+
+    > label {
+      white-space: nowrap;
+    }
+  }
+
+  button {
+    width: auto;
+    height: 30px;
+    white-space: nowrap;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.canvas[resize] {
+  border: 1px solid black;
+  background-color: white;
+  width: 75%;
+  height: 85%;
+}
+
+.toolbar-container {
+  position: absolute;
+  left: 90%;
+  bottom: 0;
+  width: 30px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+
+  > button.tool {
+    text-align: center;
+    width: 100%;
+
+    &.active {
+      background-color: #9e9e9e;
+    }
+  }
+}
+
+#outline-output {
+  white-space: pre-line;
+}
