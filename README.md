@@ -1,4 +1,4 @@
-# arbn-floorplan-canvas
+# floorplan-canvas
 A drawing engine to draw paths and shapes and get their coordinates and other related information. The original scope of this tool is to help with the creation of floorplan and save it in a form of a json format.
 
 ## Getting started
